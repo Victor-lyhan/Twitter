@@ -24,6 +24,7 @@
 		68FCB0F728A1835000A60408 /* SideMenuRollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB0F628A1835000A60408 /* SideMenuRollView.swift */; };
 		68FCB0F928A1836D00A60408 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB0F828A1836D00A60408 /* SideMenuViewModel.swift */; };
 		68FCB0FB28A1A5CF00A60408 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB0FA28A1A5CF00A60408 /* UserStatsView.swift */; };
+		68FCB0FD28A1B25600A60408 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB0FC28A1B25600A60408 /* SideMenuOptionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		68FCB0F628A1835000A60408 /* SideMenuRollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRollView.swift; sourceTree = "<group>"; };
 		68FCB0F828A1836D00A60408 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		68FCB0FA28A1A5CF00A60408 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		68FCB0FC28A1B25600A60408 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 			children = (
 				68FCB0F428A1833C00A60408 /* SideMenuView.swift */,
 				68FCB0F628A1835000A60408 /* SideMenuRollView.swift */,
+				68FCB0FC28A1B25600A60408 /* SideMenuOptionRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				68FCB0C228A0208B00A60408 /* ExploreView.swift in Sources */,
 				68FCB0F928A1836D00A60408 /* SideMenuViewModel.swift in Sources */,
 				68FCB0EF28A17B7300A60408 /* UserRowView.swift in Sources */,
+				68FCB0FD28A1B25600A60408 /* SideMenuOptionRowView.swift in Sources */,
 				68FCB0BB28A01EA500A60408 /* MainTabView.swift in Sources */,
 				68FCB0C428A020D200A60408 /* NotificationsView.swift in Sources */,
 				68FCB0FB28A1A5CF00A60408 /* UserStatsView.swift in Sources */,
