@@ -37,6 +37,7 @@
 		68FCB11B28A2045000A60408 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 68FCB11A28A2045000A60408 /* FirebaseFirestore */; };
 		68FCB11D28A2045000A60408 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 68FCB11C28A2045000A60408 /* FirebaseFirestoreSwift */; };
 		68FCB11F28A2045000A60408 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 68FCB11E28A2045000A60408 /* FirebaseStorage */; };
+		68FCB12128A206AE00A60408 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB12028A206AE00A60408 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		68FCB11028A1EFEA00A60408 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		68FCB11328A1F27200A60408 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		68FCB11528A2033100A60408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		68FCB12028A206AE00A60408 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +129,8 @@
 		68FCB0A528A0097F00A60408 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				68FCB10528A1E89400A60408 /* Authentication */,
 				68FCB0A928A009CA00A60408 /* Components */,
+				68FCB10528A1E89400A60408 /* Authentication */,
 				68FCB0FE28A1C11D00A60408 /* UploadTweet */,
 				68FCB0F028A182EF00A60408 /* SideMenu */,
 				68FCB0C028A0205800A60408 /* Profile */,
@@ -361,6 +363,7 @@
 		68FCB10728A1E8AF00A60408 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				68FCB12028A206AE00A60408 /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				68FCB0EF28A17B7300A60408 /* UserRowView.swift in Sources */,
 				68FCB0FD28A1B25600A60408 /* SideMenuOptionRowView.swift in Sources */,
 				68FCB0BB28A01EA500A60408 /* MainTabView.swift in Sources */,
+				68FCB12128A206AE00A60408 /* AuthViewModel.swift in Sources */,
 				68FCB0C428A020D200A60408 /* NotificationsView.swift in Sources */,
 				68FCB0FB28A1A5CF00A60408 /* UserStatsView.swift in Sources */,
 				68FCB10D28A1E91200A60408 /* RegistrationView.swift in Sources */,
