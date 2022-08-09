@@ -31,6 +31,7 @@
 		68FCB10D28A1E91200A60408 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB10C28A1E91200A60408 /* RegistrationView.swift */; };
 		68FCB10F28A1EA8500A60408 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB10E28A1EA8500A60408 /* RoundedShape.swift */; };
 		68FCB11128A1EFEA00A60408 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB11028A1EFEA00A60408 /* CustomInputField.swift */; };
+		68FCB11428A1F27200A60408 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB11328A1F27200A60408 /* AuthHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		68FCB10C28A1E91200A60408 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		68FCB10E28A1EA8500A60408 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		68FCB11028A1EFEA00A60408 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		68FCB11328A1F27200A60408 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		68FCB0A928A009CA00A60408 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				68FCB11228A1F25800A60408 /* Authentication */,
 				68FCB0ED28A17B2000A60408 /* Users */,
 				68FCB0B028A00B7900A60408 /* Tweets */,
 			);
@@ -351,6 +354,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		68FCB11228A1F25800A60408 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				68FCB11328A1F27200A60408 /* AuthHeaderView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,6 +436,7 @@
 				68FCB0C628A0210300A60408 /* MessagesView.swift in Sources */,
 				68FCB0CA28A0228A00A60408 /* ProfileView.swift in Sources */,
 				68FCB09A28A008D800A60408 /* ContentView.swift in Sources */,
+				68FCB11428A1F27200A60408 /* AuthHeaderView.swift in Sources */,
 				68FCB0B528A00C0E00A60408 /* TweetRowView.swift in Sources */,
 				68FCB0CE28A03FD400A60408 /* TweetFilterViewModel.swift in Sources */,
 				68FCB11128A1EFEA00A60408 /* CustomInputField.swift in Sources */,
