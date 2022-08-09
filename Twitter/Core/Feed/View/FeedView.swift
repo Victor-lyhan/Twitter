@@ -22,15 +22,15 @@ struct FeedView: View {
             Button {
                 showNewTweetView.toggle()
             } label: {
-                Image("tweet")
+                Image(systemName: "plus.bubble.fill")
                     .resizable()
-                    .renderingMode(.template)
-                    .frame(width:28, height:28)
-                    .padding()
+//                    .renderingMode(.template)
+                    .frame(width:65, height:65)
+                    .padding(7)
             }
-            .background(Color(.systemBlue))
-            .foregroundColor(.white)
-            .clipShape(Circle())
+//            .background(Color(.systemBlue))
+//            .foregroundColor(.white)
+//            .clipShape(Circle())
             .padding()
             .fullScreenCover(isPresented: $showNewTweetView){
                 NewTweetView()
