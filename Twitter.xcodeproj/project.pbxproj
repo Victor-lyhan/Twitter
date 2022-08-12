@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		689A209028A5DCC300164A16 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689A208F28A5DCC300164A16 /* ProfilePhotoSelectorView.swift */; };
+		689A209428A5E6FF00164A16 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689A209328A5E6FF00164A16 /* ImagePicker.swift */; };
+		689A209628A5F71F00164A16 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689A209528A5F71F00164A16 /* ImageUploader.swift */; };
 		68FCB09828A008D800A60408 /* TwitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB09728A008D800A60408 /* TwitterApp.swift */; };
 		68FCB09A28A008D800A60408 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FCB09928A008D800A60408 /* ContentView.swift */; };
 		68FCB09C28A008D900A60408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FCB09B28A008D900A60408 /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		689A208F28A5DCC300164A16 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		689A209328A5E6FF00164A16 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		689A209528A5F71F00164A16 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		68FCB09428A008D800A60408 /* Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FCB09728A008D800A60408 /* TwitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterApp.swift; sourceTree = "<group>"; };
 		68FCB09928A008D800A60408 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		689A209228A5E6E100164A16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				689A209328A5E6FF00164A16 /* ImagePicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		68FCB08B28A008D800A60408 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +119,7 @@
 		68FCB09628A008D800A60408 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				689A209228A5E6E100164A16 /* Utils */,
 				68FCB0A828A0098800A60408 /* Extensions */,
 				68FCB0A728A0098600A60408 /* Model */,
 				68FCB0A628A0098400A60408 /* Service */,
@@ -146,6 +161,7 @@
 		68FCB0A628A0098400A60408 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				689A209528A5F71F00164A16 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -356,6 +372,7 @@
 			children = (
 				68FCB10A28A1E8FE00A60408 /* LogInView.swift */,
 				68FCB10C28A1E91200A60408 /* RegistrationView.swift */,
+				689A208F28A5DCC300164A16 /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -469,7 +486,9 @@
 				68FCB0F528A1833C00A60408 /* SideMenuView.swift in Sources */,
 				68FCB09828A008D800A60408 /* TwitterApp.swift in Sources */,
 				68FCB10B28A1E8FE00A60408 /* LogInView.swift in Sources */,
+				689A209428A5E6FF00164A16 /* ImagePicker.swift in Sources */,
 				68FCB10228A1C16F00A60408 /* NewTweetView.swift in Sources */,
+				689A209028A5DCC300164A16 /* ProfilePhotoSelectorView.swift in Sources */,
 				68FCB0C228A0208B00A60408 /* ExploreView.swift in Sources */,
 				68FCB0F928A1836D00A60408 /* SideMenuViewModel.swift in Sources */,
 				68FCB10F28A1EA8500A60408 /* RoundedShape.swift in Sources */,
@@ -477,6 +496,7 @@
 				68FCB0FD28A1B25600A60408 /* SideMenuOptionRowView.swift in Sources */,
 				68FCB0BB28A01EA500A60408 /* MainTabView.swift in Sources */,
 				68FCB12128A206AE00A60408 /* AuthViewModel.swift in Sources */,
+				689A209628A5F71F00164A16 /* ImageUploader.swift in Sources */,
 				68FCB0C428A020D200A60408 /* NotificationsView.swift in Sources */,
 				68FCB0FB28A1A5CF00A60408 /* UserStatsView.swift in Sources */,
 				68FCB10D28A1E91200A60408 /* RegistrationView.swift in Sources */,
