@@ -15,7 +15,7 @@ struct imageUploader {
         guard let imageData = image.jpegData(compressionQuality: 0.5) else { return }
         
         let filename = NSUUID().uuidString
-//        let ref = Storage.storage().reference(withPath: "/profile_image/\(filename)")
+//       let ref = Storage.storage().reference(withPath: "/profile_image/\(filename)")
         let ref = Storage.storage().reference().child("profile_image").child(filename)
         
         ref.putData(imageData, metadata: nil) { _, error in
