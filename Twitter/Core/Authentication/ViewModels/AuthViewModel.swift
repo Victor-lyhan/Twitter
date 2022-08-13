@@ -59,6 +59,8 @@ class AuthViewModel: ObservableObject {
         userSession = nil
         //signs user out on server
         try? Auth.auth().signOut()
+        tempUserSession = nil
+        didAuthenticateUser = false
     }
     
     func uploadProfileImage(_ image: UIImage) {
