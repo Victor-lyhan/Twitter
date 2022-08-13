@@ -22,6 +22,7 @@ class FeedViewModel: ObservableObject {
             
             for i in 0 ..< tweets.count {
                 let uid = tweets[i].uid
+                
                 self.userService.fetchUser(withUid: uid) { user in
                     self.tweets[i].user = user
                 }
