@@ -9,12 +9,14 @@ import SwiftUI
 
 struct FeedView: View {
     @State private var showNewTweetView = false
+    @ObservedObject var viewModel = FeedViewModel()
+    
     var body: some View {
         ZStack(alignment:.bottomTrailing){
             ScrollView{
                 LazyVStack{
-                    ForEach(0...20,id:\.self){ _ in
-                        TweetRowView()
+                    ForEach(viewModel.tweets){ tweet in
+                        TweetRowView(tweet: tweet)
                     }
                 }
             }
@@ -24,18 +26,15 @@ struct FeedView: View {
             } label: {
                 Image(systemName: "plus.bubble.fill")
                     .resizable()
-//                    .renderingMode(.template)
                     .frame(width:65, height:65)
                     .padding(7)
             }
-//            .background(Color(.systemBlue))
-//            .foregroundColor(.white)
-//            .clipShape(Circle())
             .padding()
             .fullScreenCover(isPresented: $showNewTweetView){
                 NewTweetView()
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

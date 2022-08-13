@@ -6,34 +6,46 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TweetRowView: View {
+    let tweet: Tweet
+    
     var body: some View {
         VStack(alignment: .leading){
+            
             //profile image + user info + tweet
-            HStack(alignment: .top, spacing: 12) {
-                Circle()
-                    .frame(width: 56, height: 56)
-                    .foregroundColor(Color(.systemBlue))
-                //user info and tweet caption
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack{
-                        Text("Victor Han")
-                            .font(.subheadline).bold()
-                        Text("@victorh")
-                            .foregroundColor(.gray)
-                            .font(.caption)
-                        Text("39W")
-                            .foregroundColor(.gray)
-                            .font(.caption)
+            if let user = tweet.user {
+                HStack(alignment: .top, spacing: 12) {
+                    KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .clipShape(Circle())
+                        .scaledToFill()
+                        .frame(width: 56, height: 56)
+                    
+                    //user info and tweet caption
+                    VStack(alignment: .leading, spacing: 4) {
+                       
+                            HStack{
+                                Text(user.fullname)
+                                    .font(.subheadline).bold()
+                                Text("@\(user.username)")
+                                    .foregroundColor(.gray)
+                                    .font(.caption)
+                                Text("39W")
+                                    .foregroundColor(.gray)
+                                    .font(.caption)
+                            }
+                        
+                        // tweet caption
+                        Text(tweet.caption)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.leading)
                     }
-                    // tweet caption
-                    Text("Lionel Messi is the best ")
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
+                    
                 }
-                
             }
+            
             // action buttons
             HStack{
                 Button {
@@ -77,8 +89,8 @@ struct TweetRowView: View {
     }
 }
 
-struct TweetRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        TweetRowView()
-    }
-}
+//struct TweetRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TweetRowView()
+//    }
+//}
